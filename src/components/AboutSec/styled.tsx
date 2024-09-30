@@ -3,10 +3,10 @@ import building from "../../images/building.png";
 
 export const BuildingPicContainer = styled.div({
   position: "absolute",
-  right: "0%",
+  right: "-40%",
   bottom: "0",
   height: "100dvh",
-  width: "50%",
+  width: "100%",
   backgroundImage: `url(${building})`,
   backgroundSize: "cover", // I dalje popunjava kontejner bez izobličavanja
   backgroundRepeat: "no-repeat",

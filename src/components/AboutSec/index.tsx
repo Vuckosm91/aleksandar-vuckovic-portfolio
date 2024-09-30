@@ -34,6 +34,23 @@ const AboutSec = () => {
         }
       );
     }
+
+    if (!mediaQuery.matches) {
+      gsap.fromTo(
+        picContRef.current,
+        { opacity: 0, x: -100 }, // Početak bez rotacije
+        {
+          opacity: 1,
+          x: 0, // Rotacija u punom krugu po Z osi
+          scrollTrigger: {
+            trigger: picContRef.current,
+            start: "15% 65%",
+            end: "bottom bottom",
+            scrub: true,
+          },
+        }
+      );
+    }
   });
 
   return (
