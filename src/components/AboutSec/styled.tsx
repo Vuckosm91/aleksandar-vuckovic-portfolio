@@ -30,6 +30,9 @@ export const GrayContainer2 = styled.div({
   "@media (max-width: 1024px)": {
     height: "25vh",
     width: "110%",
+    "@media (max-width: 630px)": {
+      height: "15vh",
+    },
   },
 });
 
@@ -42,7 +45,7 @@ export const GrayContainer3 = styled.div({
     width: "10vw",
   },
   "@media (max-width: 630px)": {
-    width: "20%",
+    width: "10%",
     background: "#A4A4A4",
   },
 });
