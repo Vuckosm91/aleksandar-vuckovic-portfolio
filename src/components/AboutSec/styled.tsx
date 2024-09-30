@@ -21,6 +21,13 @@ export const BuildingPicContainer = styled.div({
     right: "0%",
     width: "80%",
   },
+  "@media (max-width: 480px)": {
+    backgroundPosition: "left",
+    height: "35vh",
+    right: "0%",
+    top: "265%",
+    width: "100%",
+  },
 });
 
 export const GrayContainer2 = styled.div({
