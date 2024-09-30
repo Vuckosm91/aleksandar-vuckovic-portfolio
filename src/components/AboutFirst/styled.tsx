@@ -74,8 +74,8 @@ export const PictureContainer = styled.div({
     top: "60%",
   },
   "@media (max-width: 480px)": {
-    height: "20vh",
-    top: "80%",
+    height: "30vh",
+    top: "70%",
   },
   "@media (max-width: 320px)": {
     display: "none",
