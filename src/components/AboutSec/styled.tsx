@@ -4,7 +4,8 @@ import building from "../../images/building.png";
 export const BuildingPicContainer = styled.div({
   position: "absolute",
   right: "0%",
-  height: "100vh",
+  bottom: "0",
+  height: "100dvh",
   width: "50%",
   backgroundImage: `url(${building})`,
   backgroundSize: "cover", // I dalje popunjava kontejner bez izobličavanja
@@ -18,14 +19,14 @@ export const BuildingPicContainer = styled.div({
   },
   "@media (max-width: 1024px)": {
     backgroundPosition: "left",
-    right: "0%",
-    width: "80%",
+    right: "-10%",
+    height: "50dvh",
+    width: "100%",
   },
   "@media (max-width: 480px)": {
-    backgroundPosition: "left",
+    backgroundPosition: "center",
     height: "35vh",
-    right: "0%",
-    top: "265%",
+    right: "-5%",
     width: "100%",
   },
 });
@@ -59,6 +60,7 @@ export const GrayContainer3 = styled.div({
 
 export const FlexContainerAboutSec = styled.div({
   display: "flex",
+  position: "relative",
   flexDirection: "column",
   width: "100%",
   height: "100vh",
