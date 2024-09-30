@@ -30,7 +30,6 @@ const AboutSec = () => {
             start: "top 75%",
             end: "bottom bottom",
             scrub: true,
-            markers: true,
           },
         }
       );
