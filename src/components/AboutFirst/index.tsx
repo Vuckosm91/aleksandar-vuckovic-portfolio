@@ -15,7 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AboutFirst = () => {
   const mediaQuery = window.matchMedia("(max-width: 1024px)");
-  const mediaQuerySmall = window.matchMedia("(max-width: 480px)");
   const grayBoxRef = useRef(null);
   const picBoxRef = useRef(null);
   const textFirstRef = useRef(null);
