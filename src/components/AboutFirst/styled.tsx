@@ -54,6 +54,9 @@ export const ContentText = styled.p({
   "@media (max-width: 630px)": {
     fontSize: "18px",
   },
+  "@media (max-width: 480px)": {
+    fontSize: "16px",
+  },
 });
 
 export const PictureContainer = styled.div({
