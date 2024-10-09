@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import picture from "../../images/aleksandar.png";
+import picture from "../../images/aleksandar.webp";
 import { FlexContainerColumn } from "../LandingPage/styled";
 
 export const GrayContainer = styled.div({

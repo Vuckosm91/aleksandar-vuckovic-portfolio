@@ -1,21 +1,16 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
-import AboutFirst from "./AboutFirst";
-import AboutSec from "./AboutSec";
-import LandingPage from "./LandingPage";
+import LandingPage from "../componentsVW/LandingPage";
 import { ScrollContainer } from "./LandingPage/styled";
-import ProjectCover from "./ProjectCover";
-import ProjectDesc from "./ProjectDesc";
-import ProjectDescSM from "./ProjectDescSM";
+import AboutFirst from "../componentsVW/About1";
+import AboutSecond from "../componentsVW/About2";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ScrollPage = () => {
   const pageOneRef = useRef(null);
   const pageTwoRef = useRef(null);
-
-  const mediaQuery = window.matchMedia("(max-width: 1024px)");
 
   useEffect(() => {
     gsap.fromTo(
@@ -53,32 +48,15 @@ const ScrollPage = () => {
 
   return (
     <ScrollContainer>
-      <div ref={pageOneRef}>
+      <div>
         <LandingPage />
       </div>
-      <div ref={pageTwoRef}>
+      <div>
         <AboutFirst />
       </div>
       <div>
-        <AboutSec />
+        <AboutSecond />
       </div>
-      {!mediaQuery.matches && (
-        <>
-          <div>
-            <ProjectCover />
-          </div>
-
-          <div>
-            <ProjectDesc />
-          </div>
-        </>
-      )}
-
-      {mediaQuery.matches && (
-        <div>
-          <ProjectDescSM />
-        </div>
-      )}
     </ScrollContainer>
   );
 };

@@ -1,6 +1,6 @@
 import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 import styled from "styled-components";
-import Logo from "../../images/22a3bfab0f23ae6dac1593d068c552d2.png";
+import Logo from "../../images/AVlogo.svg";
 import { FlexContainerAboutSec } from "../AboutSec/styled";
 
 export const FacebookIcon = styled(FaFacebook)({
