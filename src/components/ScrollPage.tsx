@@ -5,6 +5,9 @@ import LandingPage from "../componentsVW/LandingPage";
 import { ScrollContainer } from "./LandingPage/styled";
 import AboutFirst from "../componentsVW/About1";
 import AboutSecond from "../componentsVW/About2";
+import ProjectCoverL from "../componentsVW/ProjectCoverL";
+import ProjectCoverDescr from "../componentsVW/ProjectCoverL/description";
+import ProjectCoverSm from "../componentsVW/ProjectCoverSm";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -56,6 +59,15 @@ const ScrollPage = () => {
       </div>
       <div>
         <AboutSecond />
+      </div>
+      <div>
+        <ProjectCoverL />
+      </div>
+      <div>
+        <ProjectCoverDescr />
+      </div>
+      <div>
+        <ProjectCoverSm />
       </div>
     </ScrollContainer>
   );
