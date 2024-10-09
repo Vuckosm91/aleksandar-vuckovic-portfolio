@@ -68,7 +68,7 @@ export const AboutTextLight = styled.p({
 });
 
 export const AboutPhoto = styled.image({
-  position: "absolute",
+  position: "relative",
   width: "45.313vw",
   height: "95vh",
   bottom: "0",
@@ -78,9 +78,7 @@ export const AboutPhoto = styled.image({
   backgroundRepeat: "no-repeat",
   backgroundPosition: "bottom",
   border: "1px solid red",
-  "@media (max-width: 768px)": {
+  "@media (max-width: 1024px)": {
     height: "56.69vh",
-    bottom: "0",
-    left: "25vw",
   },
 });

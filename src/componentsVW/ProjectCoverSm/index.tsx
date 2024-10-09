@@ -3,7 +3,7 @@ import {
   ProjectCoverSmLayout,
   ProjectPhotoSm,
 } from "./styled";
-import { ProjectPhoto, RotatedHeadline } from "../ProjectCoverL/styled";
+import { RotatedHeadline } from "../ProjectCoverL/styled";
 import { AboutText, AboutTextLight } from "../About1/styled";
 
 const ProjectCoverSm = () => {
