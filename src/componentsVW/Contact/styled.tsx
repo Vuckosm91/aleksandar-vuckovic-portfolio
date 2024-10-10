@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const ContactLayout = styled.div({
   display: "flex",
   position: "relative",
-  justifyContent: "end",
+  justifyContent: "start",
+  alignItems: "center",
   background:
-    "linear-gradient(180deg, rgba(164,164,164,1) 20%, rgba(221,221,221,1) 20%)",
+    "linear-gradient(-90deg, rgba(164,164,164,1) 15%, rgba(221,221,221,1) 15%)",
   height: "56.25vw",
   width: "100vw",
 
@@ -14,27 +15,28 @@ export const ContactLayout = styled.div({
   },
 
   "@media (max-width: 568px)": {
+    flexDirection: "column",
     height: "222.083vw",
     background:
-      "linear-gradient(90deg, rgba(164,164,164,1) 10%, rgba(221,221,221,1) 10%)",
+      "linear-gradient(180deg, rgba(164,164,164,1) 20%, rgba(221,221,221,1) 20%)",
   },
 });
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 400px;
-  margin: 0 auto;
+  width: 61.146vw;
   padding: 20px;
-  border: 1px solid #a4a4a4;
+  margin-left: 10%;
   border-radius: 5px;
 
-  @media (max-width: 768px) {
-    width: 90%;
+  @media (max-width: 1024px) {
   }
 
-  @media (max-width: 425px) {
-    width: 80%;
+  @media (max-width: 568px) {
+    margin-inline: 15vw;
+    margin-top: 35vw;
+    width: 90vw;
   }
 `;
 
@@ -47,8 +49,10 @@ export const Input = styled.input`
   margin-bottom: 15px;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  color: #000000;
+  border: 1px solid #A4A4A4;
   border-radius: 5px;
+  background: #DDDDDD;
 
     &:focus {
     outline: none;
@@ -60,9 +64,11 @@ export const Input = styled.input`
 export const Textarea = styled.textarea`
   margin-bottom: 15px;
   padding: 10px;
+  height: 20vw;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #A4A4A4;
   border-radius: 5px;
+  background: #DDDDDD;
 
    &:focus {
     outline: none;
@@ -72,15 +78,44 @@ export const Textarea = styled.textarea`
 `;
 
 export const ButtonContact = styled.button`
-  padding: 10px 15px;
+  padding: 15px 25px;
+  width: 100%;
   font-size: 16px;
-  color: white;
-  background-color: #a4a4a4;
-  border: none;
+  color: #000000;
+  background-color: #dddddd;
+  border: 1px solid #a4a4a4;
   border-radius: 5px;
   cursor: pointer;
 
   &:hover {
     background-color: #0056b3;
+    color: #dddddd;
   }
 `;
+
+export const ButtonContainer = styled.div({
+  display: "flex",
+  justifyContent: "space-between",
+  gap: "5vw",
+});
+
+export const RotatedContactAbs = styled.h1({
+  position: "absolute",
+  right: "-5%",
+  top: "50%",
+  transformOrigin: "left-top",
+  transform: "rotate(90deg)",
+  fontSize: "4.167vw",
+  fontWeight: "300",
+  lineHeight: "6.25vw",
+  whiteSpace: "nowrap",
+
+  "@media (max-width: 568px)": {
+    position: "relative",
+    right: "0",
+    top: "0",
+    transform: "none",
+    marginTop: "25vw",
+    fontSize: "12.5vw",
+  },
+});

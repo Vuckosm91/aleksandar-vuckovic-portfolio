@@ -16,6 +16,8 @@ const ScrollPage = () => {
   const pageOneRef = useRef(null);
   const pageTwoRef = useRef(null);
 
+  const mediaBreakPoint = window.matchMedia("(min-width: 1024px)");
+
   useEffect(() => {
     gsap.fromTo(
       pageOneRef.current,
@@ -61,15 +63,20 @@ const ScrollPage = () => {
       <div>
         <AboutSecond />
       </div>
-      <div>
-        <ProjectCoverL />
-      </div>
-      <div>
-        <ProjectCoverDescr />
-      </div>
-      <div>
-        <ProjectCoverSm />
-      </div>
+      {mediaBreakPoint.matches ? (
+        <>
+          <div>
+            <ProjectCoverL />
+          </div>
+          <div>
+            <ProjectCoverDescr />
+          </div>
+        </>
+      ) : (
+        <div>
+          <ProjectCoverSm />
+        </div>
+      )}
       <div>
         <ContactForm />
       </div>
