@@ -8,7 +8,6 @@ export const AboutFirstBox = styled.div({
   alignItems: "center",
   height: "56.25vw",
   width: "100vw",
-  border: "1px solid green",
 
   background:
     "linear-gradient(to right, #A4A4A4 20%, #A4A4A4 20%,#000000 20%,#DDDDDD 20%,#DDDDDD 100%)",
@@ -34,7 +33,6 @@ export const AboutTextBox = styled.div({
     width: "80%",
     marginTop: "25%",
     marginRight: "0",
-    border: "1px solid red",
   },
 });
 
@@ -77,7 +75,6 @@ export const AboutPhoto = styled.image({
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "bottom",
-  border: "1px solid red",
   "@media (max-width: 1024px)": {
     height: "56.69vh",
   },

@@ -27,7 +27,6 @@ export const ProjectCoverDescBox = styled.div({
   justifyContent: "center",
   flexDirection: "column",
   width: "80vw",
-  border: "2px solid red",
 
   "@media (max-width: 568px)": {
     width: "90vw",

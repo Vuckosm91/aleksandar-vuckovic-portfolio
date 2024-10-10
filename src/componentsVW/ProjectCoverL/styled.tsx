@@ -62,7 +62,6 @@ export const ProjectCoverTextBox = styled.div({
   justifyContent: "end",
   width: "100%",
   height: "100%",
-  border: "1px solid blue",
 });
 
 export const ProjectCoverPreg = styled.p({
@@ -71,7 +70,6 @@ export const ProjectCoverPreg = styled.p({
   marginRight: "5vw",
   fontSize: "1.563vw",
   lineHeight: "2.344vw",
-  border: "1px solid green",
 });
 
 export const ProjectCoverProt = styled.p({
@@ -81,6 +79,5 @@ export const ProjectCoverProt = styled.p({
   transform: "rotate(90deg)",
   fontSize: "1.563vw",
   lineHeight: "2.344vw",
-  border: "1px solid green",
   whiteSpace: "nowrap",
 });

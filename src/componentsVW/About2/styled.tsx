@@ -34,7 +34,6 @@ export const AboutSecTextBox = styled.div({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  border: "3px solid black",
   width: "50vw",
   padding: "5vw",
   height: "100%",
@@ -90,7 +89,6 @@ export const BuildingPhoto = styled.image({
     backgroundSize: "cover",
     bottom: "0",
     left: "40vw",
-    border: "1px solid black",
 
     "@media (max-width: 568px)": {
       height: "70vW",
