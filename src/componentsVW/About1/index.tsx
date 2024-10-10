@@ -1,9 +1,54 @@
 import { AboutFirstBox, AboutPhoto, AboutText, AboutTextBox } from "./styled";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutFirst = () => {
+  const mediaBreakPoint = window.matchMedia("(min-width: 1024px)");
+
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    {
+      mediaBreakPoint.matches
+        ? gsap.fromTo(
+            imageRef.current,
+            { opacity: 0, y: 0, x: -100 },
+            {
+              opacity: 1,
+              y: 0,
+              x: 0,
+              scrollTrigger: {
+                trigger: imageRef.current,
+                start: "20% 60%",
+                end: "50% 55%",
+                scrub: true,
+              },
+            }
+          )
+        : gsap.fromTo(
+            imageRef.current,
+            { opacity: 0, y: 0, x: -100 },
+            {
+              opacity: 1,
+              y: 0,
+              x: 0,
+              scrollTrigger: {
+                trigger: imageRef.current,
+                start: "10% 60%",
+                end: "50% 55%",
+                scrub: true,
+              },
+            }
+          );
+    }
+  }, []);
+
   return (
     <AboutFirstBox>
-      <AboutPhoto />
+      <AboutPhoto ref={imageRef} />
       <AboutTextBox>
         <AboutText>
           My name is Aleksandar Vuckovic, and I live in Munich, Germany. I

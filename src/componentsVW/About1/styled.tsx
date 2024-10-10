@@ -69,13 +69,13 @@ export const AboutPhoto = styled.image({
   position: "relative",
   width: "45.313vw",
   height: "95vh",
-  bottom: "0",
-  left: "0",
+  alignSelf: "end",
   backgroundImage: `url(${Photo})`,
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "bottom",
   "@media (max-width: 1024px)": {
     height: "56.69vh",
+    alignSelf: "center",
   },
 });
