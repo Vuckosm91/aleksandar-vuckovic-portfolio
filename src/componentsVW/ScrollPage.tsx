@@ -1,13 +1,14 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
-import LandingPage from "../componentsVW/LandingPage";
+import LandingPage from "./LandingPage";
+import AboutFirst from "./About1";
+import AboutSecond from "./About2";
+import ProjectCoverL from "./ProjectCoverL";
+import ProjectCoverDescr from "./ProjectCoverL/description";
+import ProjectCoverSm from "./ProjectCoverSm";
 import { ScrollContainer } from "./LandingPage/styled";
-import AboutFirst from "../componentsVW/About1";
-import AboutSecond from "../componentsVW/About2";
-import ProjectCoverL from "../componentsVW/ProjectCoverL";
-import ProjectCoverDescr from "../componentsVW/ProjectCoverL/description";
-import ProjectCoverSm from "../componentsVW/ProjectCoverSm";
+import ContactForm from "./Contact";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,6 +69,9 @@ const ScrollPage = () => {
       </div>
       <div>
         <ProjectCoverSm />
+      </div>
+      <div>
+        <ContactForm />
       </div>
     </ScrollContainer>
   );

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import Logo from "../../images/AVlogo.svg";
 
+export const ScrollContainer = styled.div({
+  overflow: "hidden",
+});
+
 export const LayoutBox = styled.div({
   position: "relative",
   width: "100vw",

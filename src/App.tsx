@@ -1,5 +1,5 @@
 import "./App.css";
-import ScrollPage from "./components/ScrollPage";
+import ScrollPage from "./componentsVW/ScrollPage";
 
 function App() {
   return (
