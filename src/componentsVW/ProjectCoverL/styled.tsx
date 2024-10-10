@@ -16,6 +16,7 @@ export const ProjectPhoto = styled.image({
   position: "relative",
   width: "76.563vw",
   height: "42.969vw",
+  marginLeft: "5vw",
   backgroundImage: `url(${Photo})`,
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
@@ -60,6 +61,7 @@ export const ProjectCoverTextBox = styled.div({
   position: "relative",
   alignItems: "center",
   justifyContent: "end",
+  paddingRight: "5vw",
   width: "100%",
   height: "100%",
 });

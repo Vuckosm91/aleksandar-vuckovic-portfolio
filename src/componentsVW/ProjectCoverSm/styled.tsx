@@ -27,11 +27,13 @@ export const ProjectCoverDescBox = styled.div({
   justifyContent: "center",
   flexDirection: "column",
   width: "80vw",
+  marginRight: "3vw",
 
   "@media (max-width: 568px)": {
     width: "90vw",
     flexDirection: "column-reverse",
     justifyContent: "space-around",
+    marginRight: "0",
   },
 });
 

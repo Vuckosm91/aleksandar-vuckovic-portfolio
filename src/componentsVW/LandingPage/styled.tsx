@@ -81,7 +81,7 @@ export const GrayBox1 = styled.div({
   "@media (max-width: 1024px)": {
     flexDirection: "row",
     width: "51.389vw",
-    height: "8.333vh",
+    height: "6.333vh",
   },
 });
 
@@ -99,7 +99,7 @@ export const LandRotHeadAbs = styled.a({
   "@media (max-width: 1024px)": {
     position: "relative",
     transform: "none",
-    fontSize: "2.93vw",
+    fontSize: "3.93vw",
     right: "0",
     top: "0",
   },
