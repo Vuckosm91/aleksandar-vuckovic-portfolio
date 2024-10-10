@@ -1,12 +1,4 @@
-import React from "react";
-import {
-  Form,
-  Label,
-  Input,
-  Textarea,
-  ButtonContact,
-  ContactLayout,
-} from "./styled";
+import { Form, Input, Textarea, ButtonContact, ContactLayout } from "./styled";
 
 const ContactForm = () => {
   return (
