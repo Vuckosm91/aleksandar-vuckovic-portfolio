@@ -57,22 +57,30 @@ export const ProjectCoverH1 = styled.h1({
 
 export const ProjectCoverTextBox = styled.div({
   display: "flex",
-  justifyContent: "space-around",
+  position: "relative",
+  alignItems: "center",
+  justifyContent: "end",
   width: "100%",
   height: "100%",
-  padding: "5vw",
   border: "1px solid blue",
 });
 
 export const ProjectCoverPreg = styled.p({
+  display: "flex",
+  width: "33%",
+  marginRight: "5vw",
   fontSize: "1.563vw",
   lineHeight: "2.344vw",
   border: "1px solid green",
 });
 
 export const ProjectCoverProt = styled.p({
+  position: "absolute",
+  left: "0",
+  bottom: "40%",
   transform: "rotate(90deg)",
   fontSize: "1.563vw",
   lineHeight: "2.344vw",
   border: "1px solid green",
+  whiteSpace: "nowrap",
 });
