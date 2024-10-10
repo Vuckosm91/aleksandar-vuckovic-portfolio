@@ -6,7 +6,7 @@ export const ContactLayout = styled.div({
   justifyContent: "start",
   alignItems: "center",
   background:
-    "linear-gradient(-90deg, rgba(164,164,164,1) 15%, rgba(221,221,221,1) 15%)",
+    "linear-gradient(-90deg, rgba(164,164,164,1) 10%, rgba(221,221,221,1) 10%)",
   height: "56.25vw",
   width: "100vw",
 
@@ -101,8 +101,8 @@ export const ButtonContainer = styled.div({
 
 export const RotatedContactAbs = styled.h1({
   position: "absolute",
-  right: "-5%",
-  top: "50%",
+  right: "-8%",
+  top: "40%",
   transformOrigin: "left-top",
   transform: "rotate(90deg)",
   fontSize: "4.167vw",

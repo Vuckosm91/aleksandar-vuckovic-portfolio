@@ -12,16 +12,19 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_1fz0d76", // Service ID iz EmailJS dashboard-a
-        "template_j3xqxcs", // Template ID
+        serviceId || "", // Service ID iz EmailJS dashboard-a
+        templateId || "", // Template ID
         form.current!,
-        "ZGQhUXHPeq-ZhSSOI" // Public key iz EmailJS
+        publicKey || "" // Public key iz EmailJS
       )
       .then(
         (result) => {
