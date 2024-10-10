@@ -116,6 +116,6 @@ export const RotatedContactAbs = styled.h1({
     top: "0",
     transform: "none",
     marginTop: "25vw",
-    fontSize: "12.5vw",
+    fontSize: "9.5vw",
   },
 });
