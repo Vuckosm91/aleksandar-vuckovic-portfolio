@@ -42,6 +42,7 @@ export const AboutSecTextBox = styled.div({
   "@media (max-width: 1024px)": {
     width: "70vw",
     paddingLeft: "5vw",
+    justifyContent: "start",
   },
 
   "@media (max-width: 568px)": {

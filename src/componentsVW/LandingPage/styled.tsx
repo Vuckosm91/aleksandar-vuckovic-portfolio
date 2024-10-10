@@ -31,7 +31,7 @@ export const LandingPageBox = styled(LayoutBox)({
   alignItems: "center",
   justifyContent: "space-between",
 
-  "@media (max-width: 768px)": {
+  "@media (max-width: 1024px)": {
     flexDirection: "column-reverse",
   },
 });
@@ -40,11 +40,11 @@ export const SocialBox = styled.div({
   display: "flex",
   position: "relative",
   flexDirection: "column",
-  justifyContent: "space-around",
+  justifyContent: "center",
   height: "100%",
-  background: "red",
+  gap: "3vw",
 
-  "@media (max-width: 768px)": {
+  "@media (max-width: 1024px)": {
     flexDirection: "row",
     width: "100%",
     height: "max-content",
@@ -53,11 +53,13 @@ export const SocialBox = styled.div({
 
 export const SocialIconBox = styled.div({
   display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
   width: "8.333vw",
   height: "8.333vw",
   background: "#A4A4A4",
 
-  "@media (max-width: 768px)": {
+  "@media (max-width: 1024px)": {
     flexDirection: "row",
     width: "14.815vw",
     height: "8.333vh",
@@ -69,10 +71,32 @@ export const GrayBox1 = styled.div({
   background: "#A4A4A4",
   height: "51.389vh",
   width: "8.333vw",
+  alignItems: "center",
+  justifyContent: "center",
 
-  "@media (max-width: 768px)": {
+  "@media (max-width: 1024px)": {
     flexDirection: "row",
     width: "51.389vw",
     height: "8.333vh",
+  },
+});
+
+export const LandRotHeadAbs = styled.a({
+  position: "absolute",
+  right: "-2%",
+  top: "45%",
+  transformOrigin: "left-top",
+  transform: "rotate(90deg)",
+  fontSize: "1.563vw",
+  fontWeight: "300",
+  lineHeight: "2.344vw",
+  whiteSpace: "nowrap",
+
+  "@media (max-width: 1024px)": {
+    position: "relative",
+    transform: "none",
+    fontSize: "2.93vw",
+    right: "0",
+    top: "0",
   },
 });
