@@ -6,8 +6,53 @@ import {
   FlexRowBox100,
   GrayBox3,
 } from "./styled";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutSecond = () => {
+  const mediaBreakPoint = window.matchMedia("(min-width: 1024px)");
+
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    {
+      mediaBreakPoint.matches
+        ? gsap.fromTo(
+            imageRef.current,
+            { opacity: 0, y: 0, x: +100 },
+            {
+              opacity: 1,
+              y: 0,
+              x: 0,
+              scrollTrigger: {
+                trigger: imageRef.current,
+                start: "20% 60%",
+                end: "50% 55%",
+                scrub: true,
+              },
+            }
+          )
+        : gsap.fromTo(
+            imageRef.current,
+            { opacity: 0, y: 0, x: +100 },
+            {
+              opacity: 1,
+              y: 0,
+              x: 0,
+              scrollTrigger: {
+                trigger: imageRef.current,
+                start: "10% 60%",
+                end: "50% 55%",
+                scrub: true,
+              },
+            }
+          );
+    }
+  }, []);
+
   return (
     <AboutSecLayout>
       <FlexRowBox100>
@@ -29,7 +74,7 @@ const AboutSecond = () => {
         </AboutSecTextBox>
       </FlexRowBox100>
       <GrayBox3 />
-      <BuildingPhoto />
+      <BuildingPhoto ref={imageRef} />
     </AboutSecLayout>
   );
 };
